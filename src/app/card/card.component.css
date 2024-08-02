@@ -1,0 +1,16 @@
+.row {
+  gap: 20px;
+}
+
+.card-title {
+  height: 3rem;
+}
+
+.card {
+  position: relative;
+}
+
+.out-stock {
+  position: absolute;
+  top: 10px;
+}

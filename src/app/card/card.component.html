@@ -1,0 +1,46 @@
+<div class="container mt-5">
+  <div class="row d-flex justify-content-center">
+    @for (item of products; track $index) {
+    <div class="card" style="width: 18rem" (click)="viewSinglePage(item.id)">
+      <img src="{{ item.thumbnail }}" class="card-img-top" alt="product-img" />
+      @if (item.stock) {
+      <div class="out-stock">
+        <button type="button" class="btn btn-success">In Stock</button>
+      </div>
+      } @else {
+      <div class="out-stock">
+        <button type="button" class="btn btn-danger">Out of stock</button>
+      </div>
+      }
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <div class="price-rating d-flex align-items-center">
+          <p class="item-price me-auto my-auto">{{ item.price }}$</p>
+          @if (item.rating === 0 || item.rating === 1) {
+          <i class="fa-solid fa-star"></i>
+          } @if (item.rating === 2) {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          }@if (item.rating === 3) {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          }@if (item.rating === 5) {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          }@if (item.rating === 4) {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          }
+        </div>
+      </div>
+      <button class="btn btn-secondary mb-3">Add to cart</button>
+    </div>
+    }
+  </div>
+</div>
