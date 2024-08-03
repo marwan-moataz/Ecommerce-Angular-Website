@@ -1,0 +1,50 @@
+<div class="form-body mt-5">
+  <div class="row">
+    <div class="form-holder">
+      <div class="form-content">
+        <div class="form-items">
+          <h3 class="text-center">Sign In</h3>
+          <p class="text-center">Fill in the data below.</p>
+          <form #loginForm="ngForm" (ngSubmit)="sendData(loginForm)">
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Username"
+                ngModel
+                name="username"
+                #username="ngModel"
+                required
+              />
+              @if (username.invalid && username.touched) {
+              <div class="danger">Username field is invalid!</div>
+              } @if(username.valid) {
+              <div class="valid-msg">Username is valid!</div>
+              }
+            </div>
+            <div class="col-md-12">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="Password"
+                name="userpassword"
+                ngModel
+                #userpassword="ngModel"
+                required
+              />
+              @if (userpassword.invalid && userpassword.touched) {
+              <div class="danger">Password field is invalid!</div>
+              }@if(userpassword.valid) {
+              <div class="valid-msg">Password is valid</div>
+              }
+            </div>
+
+            <div class="form-button mt-3 d-flex justify-content-center">
+              <button id="submit" type="submit" class="btn w-25">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,18 +1,20 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo p-1">
+      <a class="navbar-brand m-auto" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a
@@ -32,6 +34,10 @@
           >
         </li>
       </ul>
+    </div>
+    <div class="login-logout">
+      <button class="btn btn-primary me-1" routerLink="/login">Login</button>
+      <button class="btn btn-primary" routerLink="/signup">SignUp</button>
     </div>
   </div>
 </nav>

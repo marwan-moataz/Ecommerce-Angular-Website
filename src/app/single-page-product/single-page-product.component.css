@@ -9,6 +9,17 @@ body {
   box-sizing: border-box;
 }
 
+.item {
+  background-color: white;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+.pictures-hold {
+  background-color: black;
+  border-radius: 2rem;
+}
+
 h1 {
   font-weight: 700;
   font-size: 5em;

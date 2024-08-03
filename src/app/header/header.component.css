@@ -2,3 +2,38 @@
   color: orange;
   font-weight: bold;
 }
+
+.navbar {
+  background-color: black !important;
+}
+
+.logo {
+  border: 1px solid aqua !important;
+  border-radius: 5px;
+}
+
+.logo a,
+.navbar-collapse ul li a {
+  color: aqua !important;
+}
+
+#navbarNav {
+  margin: auto !important;
+}
+
+.btn {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid aqua;
+  box-shadow: none;
+  color: aqua;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: white;
+  outline: none !important;
+  box-shadow: 1px 1px 1px 0 aqua;
+  color: black;
+}
