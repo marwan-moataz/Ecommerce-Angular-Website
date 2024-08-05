@@ -5,6 +5,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { SinglePageProductComponent } from './single-page-product/single-page-product.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { CartComponent } from './cart/cart.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
   { path: 'single-page/:id', component: SinglePageProductComponent },
   { path: 'login', component: LoginFormComponent },
   { path: 'signup', component: SignupFormComponent },
+  { path: 'cart', component: CartComponent },
   { path: '**', component: NotFoundPageComponent },
 ];

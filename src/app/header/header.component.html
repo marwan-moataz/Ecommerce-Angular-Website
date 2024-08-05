@@ -33,7 +33,16 @@
             >product</a
           >
         </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart" routerLinkActive="active-link"
+            >Cart</a
+          >
+        </li>
       </ul>
+    </div>
+    <div class="cart-icon me-5">
+      <div class="counter-on-cart">{{ counterValue }}</div>
+      <i class="fa-solid fa-cart-shopping"></i>
     </div>
     <div class="login-logout">
       <button class="btn btn-primary me-1" routerLink="/login">Login</button>

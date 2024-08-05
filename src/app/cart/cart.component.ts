@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { ServicesService } from '../services/services.service';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-cart',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  imports: [],
+  templateUrl: './cart.component.html',
+  styleUrl: './cart.component.css',
 })
-export class HeaderComponent {
+export class CartComponent {
   counterValue!: number;
   constructor(private changeCounter: ServicesService) {}
   ngOnInit() {
